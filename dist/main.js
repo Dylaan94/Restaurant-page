@@ -1,1 +1,1 @@
-console.log("hello I'm working");
+(()=>{"use strict";console.log("test"),console.log("nextLoadRuns"),console.log("pageLoad runs")})();
