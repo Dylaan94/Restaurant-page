@@ -1,13 +1,13 @@
 
 console.log("test")
 
-import {nextLoad} from './nextLoad';
+import {nextLoad} from './modules/nextLoad';
 
-import {pageLoad} from './initialLoad';
+import {pageLoadTest} from './modules/initialLoad';
 
 
 nextLoad();
-pageLoad();
+pageLoadTest();
 
 // accessing the first module and then the console logs that it is not defined.
 // managed to get it to work by accessing them as functions directly??
