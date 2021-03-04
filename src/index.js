@@ -12,10 +12,6 @@ pageLoadTest();
 pageLoad();
 tabLoad();
 
-console.log(header)
-console.log(title)
-console.log(about)
-
 let aboutBtn = document.getElementById('about')
 let menuBtn = document.getElementById('menu')
 let contactBtn = document.getElementById('contact')
