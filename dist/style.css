@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background: blue;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    background: green;
+}
+
+.otherContent {
+    background: yellow;
+}
+
