@@ -2,4 +2,11 @@ let aboutPageTest = () => {
     console.log("About Page running")
 }
 
-export {aboutPageTest}
+let loadAboutPage = () => {
+    let otherContent = document.getElementById('otherContent');
+    console.log(otherContent)
+    otherContent.innerHTML = "About"
+}
+
+export {aboutPageTest,
+        loadAboutPage}

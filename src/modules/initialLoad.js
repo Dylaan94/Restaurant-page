@@ -36,7 +36,7 @@ let pageLoad = () => {
     otherContent.innerHTML = 'Other stuff here'
     
     //footer
-    footer.innerHTML = 'footer'
+    footer.innerHTML = 'Technologies used: HTML CSS Javascript Webkit'
 }
 
 

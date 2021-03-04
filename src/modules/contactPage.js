@@ -2,4 +2,9 @@ let contactPageTest = () => {
     console.log("Contact page running")
 }
 
-export {contactPageTest};
+let loadContactPage = () => {
+    let otherContent = document.getElementById('otherContent')
+    otherContent.innerHTML = "Contact"
+}
+export {contactPageTest,
+        loadContactPage};

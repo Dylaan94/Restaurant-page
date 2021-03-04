@@ -3,10 +3,9 @@ console.log("test")
 
 import {pageLoadTest, pageLoad, tabLoad} from './modules/initialLoad';
 
-import {aboutPageTest} from './modules/aboutPage';
-import {menuPageTest} from './modules/menuPage';
-import {contactPageTest} from './modules/contactPage'
-
+import {aboutPageTest, loadAboutPage} from './modules/aboutPage';
+import {menuPageTest, loadMenuPage} from './modules/menuPage';
+import {contactPageTest, loadContactPage} from './modules/contactPage'
 
 pageLoadTest();
 pageLoad();
@@ -16,16 +15,20 @@ let aboutBtn = document.getElementById('about')
 let menuBtn = document.getElementById('menu')
 let contactBtn = document.getElementById('contact')
 
+
 aboutBtn.addEventListener("click", () => {
     aboutPageTest();
+    loadAboutPage();
 })
 
 menuBtn.addEventListener("click", () => {
     menuPageTest();
+    loadMenuPage();
 })
 
 contactBtn.addEventListener("click", () => {
     contactPageTest();
+    loadContactPage();
 })
 
 // accessing the first module and then the console logs that it is not defined.
