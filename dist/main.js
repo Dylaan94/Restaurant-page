@@ -1,1 +1,1 @@
-(()=>{"use strict";document.getElementById("content"),console.log("test"),console.log("nextLoadRuns"),console.log("pageLoad runs look")})();
+(()=>{"use strict";let e,o=document.getElementById("content");console.log(o);let t=["header","title","otherContent"];console.log("test"),console.log("nextLoadRuns"),console.log("pageLoad runs look"),(()=>{for(let l=0;l<t.length;l++)e=document.createElement("div"),e.className=t[l],e.id="div"+l,o.appendChild(e);console.log(o)})()})();
