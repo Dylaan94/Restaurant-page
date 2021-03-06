@@ -33,7 +33,7 @@ let pageLoad = () => {
     title.innerHTML = "Aso's Okonomiyaki";
 
     //other content
-    otherContent.innerHTML = 'Other stuff here'
+    // otherContent.innerHTML = 'Other stuff here' commented out to prevent memory leak
     
     //footer
     footer.innerHTML = 'Technologies used: HTML CSS Javascript Webkit'

@@ -5,7 +5,6 @@ let aboutPageTest = () => {
 let loadAboutPage = () => {
     let divArray = ['aboutTitle', 'aboutText',];
     let otherContent = document.getElementById('otherContent');
-    otherContent.innerHTML = "";
 
     for (let i = 0; i < divArray.length; i++) {
         let div = document.createElement('div');

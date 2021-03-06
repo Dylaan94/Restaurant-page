@@ -36,8 +36,6 @@ body {
     font-weight: 1000;
 }
 
-
-
 .otherContent {
     flex: 1 0 auto;
 }
@@ -49,3 +47,16 @@ body {
     height: 6vh;
 }
 
+/* About Page Styling */
+
+.aboutTitle {
+    display: flex;
+    justify-content: center;
+    background: rgb(255,255,255,0.5);
+}
+
+.aboutText {
+    display: flex;
+    justify-content: center;
+    background: rgb(255,255,255,0.5);
+}
