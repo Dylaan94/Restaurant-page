@@ -12,7 +12,16 @@ let loadMenuPage = () => {
         otherContent.appendChild(div);
     }
     console.log(otherContent);
+
+    renderMenuPage()
 }
 
+let renderMenuPage = () => {
+    let menuTitle = document.getElementById('menuTitle')
+    let menuContainer = document.getElementById('menuContainer')
+
+    menuTitle.innerHTML = 'Menu'
+    menuContainer.innerHTML = 'Menu Container'
+}
 export {menuPageTest,
         loadMenuPage}
