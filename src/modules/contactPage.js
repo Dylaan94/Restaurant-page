@@ -4,7 +4,7 @@ let contactPageTest = () => {
 
 let loadContactPage = () => {
     let otherContent = document.getElementById('otherContent');
-    let divArray = ['contactInfo', 'googleDiv']
+    let divArray = ['contactTitle', 'contactContainer']
 
     for (let i = 0; i < divArray.length; i++) {
         let div = document.createElement('div');
@@ -12,16 +12,43 @@ let loadContactPage = () => {
         div.className = divArray[i];
         otherContent.appendChild(div);
     }
+
+
+    // assign new divs
+    let contactTitle = document.getElementById('contactTitle');
+    let contactContainer = document.getElementById('contactContainer');
+
+    // add 2 new divs to contactContainer
+    let containerArr = ["contactDiv", "googleDiv"]
+
+    for (let i = 0; i < containerArr.length; i++) {
+        let div = document.createElement('div');
+        div.id = containerArr[i];
+        div.className = containerArr[i];
+        contactContainer.appendChild(div)
+    }
+
     console.log(otherContent)
-    renderOtherContent();
+
+    renderOtherContent(contactTitle, contactContainer);
 }
 
 let renderOtherContent = () => {
-    let contactInfo = document.getElementById('contactInfo')
+    // assign new divs 
+    let contactDiv = document.getElementById('contactDiv')
     let googleDiv = document.getElementById('googleDiv')
 
-    contactInfo.innerHTML = 'Contact Info'
-    googleDiv.innerHTML = 'Google Div'
+    // style title
+    contactTitle.innerHTML = 'Contact'
+
+    contactDiv.innerHTML = "<p><b> Name: </b> Aso's Okonomiyaki</p> " 
+                         + "<p><b> Address: </b> Hiroshima Prefecture, Onomichi City 123456</p>"
+                         + "<p><b> Contact: </b> 123-456-7890 </p>"
+
+    googleDiv.innerHTML = "Google Maps"
+
 }
+
+
 export {contactPageTest,
         loadContactPage};

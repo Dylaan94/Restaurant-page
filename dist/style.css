@@ -122,3 +122,45 @@ body {
     
 }
 
+/* Contact page styling */
+
+.contactTitle {
+    background: rgb(255,255,255,0.75);
+    padding: 1vw;
+    font-size: 5vh;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.contactDiv {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255,255,255,0.75);
+    border: solid black 0.2em;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.contactDiv > p > b {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.googleDiv {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255,255,255,0.75);
+    border: solid black 0.2em;
+    border-radius: 10px;
+    padding: 1vw;
+    margin-top: 1vh;
+}
