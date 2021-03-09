@@ -1,5 +1,3 @@
-// need to clean up variables, make more readable.
-
 let menuPageTest = () => {
     console.log("Menu Page Running")
 }
@@ -8,16 +6,15 @@ let loadMenuPage = () => {
     let divArray = ['menuTitle', 'menuContainer']
     let otherContent = document.getElementById('otherContent')
 
-    // dynamically create divs based off Array
-
+    // dynamically create initial divs based off Array
     for (let i = 0; i < divArray.length; i++) {
         let div = document.createElement('div');
         div.id = divArray[i];
         div.className = divArray[i];
         otherContent.appendChild(div);
     }
-    console.log(otherContent);
 
+    // assign newly created divs
     let menuTitle = document.getElementById('menuTitle')
     let menuContainer = document.getElementById('menuContainer')
 
@@ -25,7 +22,6 @@ let loadMenuPage = () => {
     menuTitle.innerHTML = 'Menu'
 
     // dynamically create new divs for rendering menu
-
     let menuItemsArr = ['noodles', 'toppings', 'extras']
 
     for (let i = 0; i < menuItemsArr.length; i++) {
@@ -35,42 +31,35 @@ let loadMenuPage = () => {
         menuContainer.appendChild(div)
     }
 
-    // create seperate divs for each menu section
-
+    // assign newly created divs 
     let noodlesDiv = document.getElementById('noodles')
     let toppingsDiv = document.getElementById('toppings')
     let extrasDiv = document.getElementById('extras')
 
-    let menuContainerArr = ['Title','Type', 'Price']
+    // create title, type, and price divs to go in noodles, toppings, and extras
+    let menuContainerArr = ['Title','Type','Price']
 
     for (let i = 0; i < menuContainerArr.length; i++) {
-
         let div = document.createElement('div');
-        div.id = 'noodles' + menuContainerArr[i];
+        div.id = 'noodles' + menuContainerArr[i]; // creates noodleTitle, noodleType, noodlePrice
         div.className = 'noodles' + menuContainerArr[i];
-
-        noodlesDiv.appendChild(div);
+        noodlesDiv.appendChild(div); // add 3 divs to noodles
 
         let div2 = document.createElement('div')
-        div2.id = 'toppings' + menuContainerArr[i];
+        div2.id = 'toppings' + menuContainerArr[i]; // creates toppingTitle, toppingType, toppingPrice
         div2.className = 'toppings' + menuContainerArr[i]
-
-        toppingsDiv.appendChild(div2)
+        toppingsDiv.appendChild(div2) // add 3 divs to toppings
 
         let div3 = document.createElement('div')
-        div3.id = 'extras' + menuContainerArr[i];
+        div3.id = 'extras' + menuContainerArr[i]; // creates extrasTitle, extrasType, extrasPrice
         div3.className = 'extras' + menuContainerArr[i]
-
-        extrasDiv.appendChild(div3)
+        extrasDiv.appendChild(div3) // add 3 divs to extras
     }
 
-    // add titles to new divs
-
+    // add titles to new divs ready for styling
     let noodlesTitle = document.getElementById('noodlesTitle').textContent = 'Noodles'
     let toppingsTitle = document.getElementById('toppingsTitle').textContent = 'Toppings'
     let extrasTitle = document.getElementById('extrasTitle').textContent = 'Extras'
-
-
 
     console.log(menuContainer);
 
@@ -78,9 +67,7 @@ let loadMenuPage = () => {
 }
 
 let renderMenu = () => {
-
-    // add data to divs that were created above
-
+    // assign new divs 
     let noodlesType = document.getElementById('noodlesType');
     let noodlesPrice = document.getElementById('noodlesPrice');
 
@@ -93,7 +80,6 @@ let renderMenu = () => {
     console.log(menuContainer)
     
     // Menu Arrays to be dynamically added
-
     let noodleArray = [
                         {type: 'soba',
                         price: "¥800"},
@@ -125,7 +111,7 @@ let renderMenu = () => {
                         price: '¥0'}
                     ]
 
-    // dynamically add array items
+    // dynamically add array values to new noodles, topping, and extras divs
 
     //noodles
     for (let i = 0; i < noodleArray.length; i++) {
@@ -160,8 +146,6 @@ let renderMenu = () => {
         priceValue.textContent = noodleArray[i].price;
         extrasPrice.appendChild(priceValue)
     }
-
-  
 }
 export {menuPageTest,
         loadMenuPage}

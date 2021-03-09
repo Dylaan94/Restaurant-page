@@ -3,6 +3,7 @@ let aboutPageTest = () => {
 }
 
 let loadAboutPage = () => {
+    // dynamically create divs based off array
     let divArray = ['aboutTitle', 'aboutText', 'onomichiyakiTitle', 'onomichiyakiAbout'];
     let otherContent = document.getElementById('otherContent');
 
@@ -22,7 +23,7 @@ let renderText = () => {
     let onomichiyakiTitle = document.getElementById('onomichiyakiTitle')
     let onomichiyakiAbout = document.getElementById('onomichiyakiAbout')
     
-
+    // add text
     aboutTitle.innerHTML = "About Aso's Okonomiyaki"
     aboutText.innerHTML = "Established in 1998, Aso has been serving the people of Onomichi proudly for over 20 years!"
                         + " come in any time to try our delicious Onomichi Style Okonomiyaki"

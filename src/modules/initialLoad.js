@@ -6,7 +6,7 @@ let pageLoadTest = () => {
 // variables
 let contentDiv = document.getElementById('content');
 let divArray = ["header", "title", "otherContent", "footer"]
-let tabArray = ["about", "menu", "contact"]
+let tabArray = ["logo", "about", "menu", "contact"]
 
 let pageLoad = () => {
     // for loop to dynamically create divs
@@ -26,9 +26,6 @@ let pageLoad = () => {
     let otherContent = document.getElementById('otherContent')
     let footer = document.getElementById('footer')
 
-    //header
-    header.innerHTML = 'header';
-
     //title
     title.innerHTML = "Aso's Okonomiyaki";
 
@@ -38,8 +35,6 @@ let pageLoad = () => {
     //footer
     footer.innerHTML = 'Technologies used: HTML CSS Javascript Webkit'
 }
-
-
 
 let tabLoad = () => {
     for (let i = 0; i < tabArray.length; i++) {

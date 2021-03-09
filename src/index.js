@@ -19,7 +19,7 @@ let clearNodes = () => {
 let aboutBtn = document.getElementById('about')
 let menuBtn = document.getElementById('menu')
 let contactBtn = document.getElementById('contact')
-
+let logoBtn = document.getElementById('logo');
 
 aboutBtn.addEventListener("click", () => {
     clearNodes();
@@ -39,9 +39,6 @@ contactBtn.addEventListener("click", () => {
     loadContactPage();
 })
 
-// accessing the first module and then the console logs that it is not defined.
-// managed to get it to work by accessing them as functions directly??
-
-// need to workout why webpack keeps freezing terminal
-
-// Why are my variables in initialLoad working without declaring them
+logoBtn.addEventListener("click", () => {
+    clearNodes();
+})
