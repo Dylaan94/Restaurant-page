@@ -38,6 +38,7 @@ let renderOtherContent = () => {
     let contactDiv = document.getElementById('contactDiv')
     let googleDiv = document.getElementById('googleDiv')
 
+
     // style title
     contactTitle.innerHTML = 'Contact'
 
@@ -45,9 +46,33 @@ let renderOtherContent = () => {
                          + "<p><b> Address: </b> Hiroshima Prefecture, Onomichi City 123456</p>"
                          + "<p><b> Contact: </b> 123-456-7890 </p>"
 
-    googleDiv.innerHTML = "Google Maps"
+    googleDiv.innerHTML = "Google Maps" 
 
+
+    // create variables for Google Maps API
+    let map = document.createElement('div')
+    map.id = 'map'
+    googleDiv.appendChild(map);
+
+
+   initMap();
 }
+
+// Initialize and add the map
+function initMap() {
+    // The location of Aso
+    const asoOkonomiyaki = { lat: 34.40138, lng: 133.180840 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 13, // zooms between 0-19
+      center: asoOkonomiyaki,
+    });
+    // The marker, positioned at Aso
+    const marker = new google.maps.Marker({
+      position: asoOkonomiyaki,
+      map: map,
+    });
+  }
 
 
 export {contactPageTest,

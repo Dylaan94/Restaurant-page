@@ -9,7 +9,9 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    
 }
 
 .content{
@@ -164,3 +166,10 @@ body {
     padding: 1vw;
     margin-top: 1vh;
 }
+
+/* map styling */
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
