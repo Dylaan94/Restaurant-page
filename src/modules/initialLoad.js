@@ -29,13 +29,13 @@ let divArray = ["header", "title", "otherContent", "footer"]
     let footer = document.getElementById('footer')
 
     //title
-    title.innerHTML = "Aso's Okonomiyaki";
+    title.innerHTML = "aso's okonomiyaki";
 
     //other content
     // otherContent.innerHTML = 'Other stuff here' commented out to prevent memory leak
     
     //footer
-    footer.innerHTML = 'Technologies used: HTML CSS Javascript Webkit'
+    footer.innerHTML = 'Technologies used: HTML, CSS, Javascript, Webkit, Google Maps API'
 
 }
 
@@ -56,13 +56,13 @@ let tabLoad = () => {
     // remove text
     logoBtn.innerHTML = "";
 
+    //create okonomiyakiClipart
     let okonomiyakiClipart = document.createElement('img')
     okonomiyakiClipart.src = "https://2.bp.blogspot.com/-OXYLWw2IV6A/WGCxTlg140I/AAAAAAABAqM/NsIzwDF0vSoUJMaX101Cs87_iOzWMGAYgCLcB/s800/omatsuri_okonomiyaki.png";
     okonomiyakiClipart.id = 'okonomiyakiClipart'
     okonomiyakiClipart.className = 'okonomiyakiClipart'
 
     logoBtn.appendChild(okonomiyakiClipart);
-
 }
 
 export {pageLoadTest,

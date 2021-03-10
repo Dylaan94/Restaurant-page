@@ -16,9 +16,11 @@ body {
 
 .content{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 }
 
 /* header styling */
@@ -50,29 +52,41 @@ body {
     background-color: darkgrey;
 }
 
-
+/* title styling */
 
 .title {
     display: flex;
     justify-content: center;
-    background: green;
-    font-size: 6vh;
+    background: rgb(255,255,255,0.75);
+    font-size: 4vh; 
     font-weight: 1000;
+    margin-top: 2vh;
+    padding: 0.2em;
+    border-radius: 10px;
+    border: black solid 0.1em;
 }
 
 .otherContent {
-    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 7vh;
 }
 
 .footer {
-    background: rgb(0,0,0, 0.7);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vh;
+    background: rgb(0,0,0, 0.995);
     color: white;
     flex-shrink: 0;
     height: 6vh;
+    width: 100vw;
+
 }
 
 /* About Page Styling */
