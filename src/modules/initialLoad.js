@@ -3,12 +3,14 @@ let pageLoadTest = () => {
     console.log("pageLoad runs look");
 }
 
+
+let pageLoad = () => {
+
 // variables
 let contentDiv = document.getElementById('content');
 let divArray = ["header", "title", "otherContent", "footer"]
-let tabArray = ["logo", "about", "menu", "contact"]
 
-let pageLoad = () => {
+
     // for loop to dynamically create divs
     for (let i = 0; i < divArray.length; i++) {
         let div = document.createElement('div');
@@ -34,9 +36,13 @@ let pageLoad = () => {
     
     //footer
     footer.innerHTML = 'Technologies used: HTML CSS Javascript Webkit'
+
 }
 
 let tabLoad = () => {
+    // create tab elements
+    let tabArray = ["logo", "about", "menu", "contact"]
+
     for (let i = 0; i < tabArray.length; i++) {
        let list = document.createElement('li')
        list.className = tabArray[i];
@@ -44,6 +50,19 @@ let tabLoad = () => {
        list.innerHTML = tabArray[i];
        header.appendChild(list);
     }
+
+    // add clipart to logo list item
+    let logoBtn = document.getElementById('logo');
+    // remove text
+    logoBtn.innerHTML = "";
+
+    let okonomiyakiClipart = document.createElement('img')
+    okonomiyakiClipart.src = "https://2.bp.blogspot.com/-OXYLWw2IV6A/WGCxTlg140I/AAAAAAABAqM/NsIzwDF0vSoUJMaX101Cs87_iOzWMGAYgCLcB/s800/omatsuri_okonomiyaki.png";
+    okonomiyakiClipart.id = 'okonomiyakiClipart'
+    okonomiyakiClipart.className = 'okonomiyakiClipart'
+
+    logoBtn.appendChild(okonomiyakiClipart);
+
 }
 
 export {pageLoadTest,
