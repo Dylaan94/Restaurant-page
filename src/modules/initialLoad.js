@@ -1,15 +1,7 @@
-// webpack tests
-let pageLoadTest = () => {
-    console.log("pageLoad runs look");
-}
-
-
 let pageLoad = () => {
-
 // variables
 let contentDiv = document.getElementById('content');
 let divArray = ["header", "title", "otherContent", "footer"]
-
 
     // for loop to dynamically create divs
     for (let i = 0; i < divArray.length; i++) {
@@ -18,11 +10,9 @@ let divArray = ["header", "title", "otherContent", "footer"]
         div.id = divArray[i];
         contentDiv.appendChild(div);
     }
-
     console.log(contentDiv);
 
     // variables for styling
-
     let header = document.getElementById('header')
     let title = document.getElementById('title')
     let otherContent = document.getElementById('otherContent')
@@ -30,13 +20,12 @@ let divArray = ["header", "title", "otherContent", "footer"]
 
     //title
     title.innerHTML = "aso's okonomiyaki";
-
-    //other content
-    // otherContent.innerHTML = 'Other stuff here' commented out to prevent memory leak
     
     //footer
     footer.innerHTML = 'Technologies used: HTML, CSS, Javascript, Webkit, Google Maps API'
 
+    //create tab
+    tabLoad();
 }
 
 let tabLoad = () => {
@@ -65,11 +54,4 @@ let tabLoad = () => {
     logoBtn.appendChild(okonomiyakiClipart);
 }
 
-export {pageLoadTest,
-        pageLoad,
-        tabLoad}
-
-
-
-        // read about dom creating global variables and work out how to NOT use them
-        // look at creating just one single function to export from each module
+export {pageLoad}

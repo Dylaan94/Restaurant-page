@@ -1,7 +1,3 @@
-let menuPageTest = () => {
-    console.log("Menu Page Running")
-}
-
 let loadMenuPage = () => {
     let divArray = ['menuTitle', 'menuContainer']
     let otherContent = document.getElementById('otherContent')
@@ -147,5 +143,4 @@ let renderMenu = () => {
         extrasPrice.appendChild(priceValue)
     }
 }
-export {menuPageTest,
-        loadMenuPage}
+export {loadMenuPage}

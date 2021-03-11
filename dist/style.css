@@ -74,6 +74,8 @@ body {
     margin-bottom: 7vh;
 }
 
+/* footer styling */
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -156,10 +158,6 @@ body {
     padding-right: 0.7em;
 }
 
-.noodlesPrice, .toppingsPrice, .extrasPrice {
-    
-}
-
 /* Contact page styling */
 
 .contactTitle {
@@ -175,8 +173,6 @@ body {
 .contactContainer {
     display: flex;
     flex-direction: column;
-
-
 }
 
 .contactDiv {

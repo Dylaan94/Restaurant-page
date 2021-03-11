@@ -1,7 +1,3 @@
-let aboutPageTest = () => {
-    console.log("About Page running")
-}
-
 let loadAboutPage = () => {
     // dynamically create divs based off array
     let divArray = ['aboutTitle', 'aboutText', 'onomichiyakiTitle', 'onomichiyakiAbout'];
@@ -35,5 +31,4 @@ let renderText = () => {
                                 + "the Okonomiyaki is finally fried until the noodles are beautifully crispy; a technique borrowed from Fuchu."
 }
 
-export {aboutPageTest,
-        loadAboutPage}
+export {loadAboutPage}

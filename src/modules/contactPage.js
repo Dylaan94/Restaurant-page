@@ -1,7 +1,3 @@
-let contactPageTest = () => {
-    console.log("Contact page running")
-}
-
 let loadContactPage = () => {
     let otherContent = document.getElementById('otherContent');
     // create new divs
@@ -73,5 +69,4 @@ function initMap() {
     });
   }
 
-export {contactPageTest,
-        loadContactPage};
+export {loadContactPage};

@@ -1,11 +1,10 @@
-import {pageLoadTest, pageLoad, tabLoad} from './modules/initialLoad';
-import {aboutPageTest, loadAboutPage} from './modules/aboutPage';
-import {menuPageTest, loadMenuPage} from './modules/menuPage';
-import {contactPageTest, loadContactPage} from './modules/contactPage'
+import {pageLoad} from './modules/initialLoad';
+import {loadAboutPage} from './modules/aboutPage';
+import {loadMenuPage} from './modules/menuPage';
+import {loadContactPage} from './modules/contactPage'
 
-pageLoadTest();
+// init page
 pageLoad();
-tabLoad();
 
 let clearNodes = () => {
     let otherContent = document.getElementById('otherContent')
@@ -16,6 +15,7 @@ let clearNodes = () => {
     }
 }
 
+// add tab functionality
 let aboutBtn = document.getElementById('about')
 let menuBtn = document.getElementById('menu')
 let contactBtn = document.getElementById('contact')
